@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{87359885-A75B-473B-889A-5FD72DB7D61C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FerreteriaZC</RootNamespace>
+    <AssemblyName>FerreteriaZC</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCambioClave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCambioClave.Designer.cs">
+      <DependentUpon>FrmCambioClave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCategoría.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCategoría.Designer.cs">
+      <DependentUpon>FrmCategoría.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmImprimir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmImprimir.Designer.cs">
+      <DependentUpon>FrmImprimir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProductos.Designer.cs">
+      <DependentUpon>FrmProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUsuarios.Designer.cs">
+      <DependentUpon>FrmUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCambioClave.resx">
+      <DependentUpon>FrmCambioClave.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCategoría.resx">
+      <DependentUpon>FrmCategoría.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmImprimir.resx">
+      <DependentUpon>FrmImprimir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProductos.resx">
+      <DependentUpon>FrmProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUsuarios.resx">
+      <DependentUpon>FrmUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\img\menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\img\logoejemplo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\img\cerrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\img\minimizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\img\list.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\img\agregar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\img\categoria.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\img\usuarios.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\img\lista.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\img\impresora.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\img\error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\img\check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\img\atras.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="img\agregar.png" />
+    <Content Include="img\atras.png" />
+    <Content Include="img\categoria.png" />
+    <Content Include="img\cerrar.png" />
+    <Content Include="img\check.png" />
+    <Content Include="img\error.png" />
+    <Content Include="img\impresora.png" />
+    <Content Include="img\list.png" />
+    <Content Include="img\lista.png" />
+    <Content Include="img\logoejemplo.jpg" />
+    <Content Include="img\menu.png" />
+    <Content Include="img\minimizar.png" />
+    <Content Include="img\usuario.png" />
+    <Content Include="img\usuarios.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
